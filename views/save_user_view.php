@@ -23,10 +23,14 @@ if (isset($_POST['lastname'])) {
         unset($lastname);
     }
 }
+
 //заносим введенный пользователем пароль в переменную $password, если он пустой, то уничтожаем переменную
+
 if (empty($login) or empty($password) or empty($name) or empty($lastname)) //если пользователь не ввел логин или пароль, то выдаем ошибку и останавливаем скрипт
 {
+
     exit ("<div class='alert alert-danger' role='alert'><span class='glyphicon glyphicon-remove-sign' aria-hidden='true'></span>Вы не ввели всю информацию, вернитесь назад и заполните все поля!</div>");
+
 }
 if (!function_exists('mb_ucfirst') && extension_loaded('mbstring'))
 {
