@@ -65,9 +65,9 @@ class Route
 		}
 
 		// записываем посещение
-        include "/home/admin/web/thecovergame.com/public_html/application/models/Counter.php";
+/*        include "/home/admin/web/thecovergame.com/public_html/application/models/Counter.php";
         $counter = new Counter($controller_name, $action_name, $_SERVER['REMOTE_ADDR']);
-		$counter->saveVisit();
+		$counter->saveVisit();*/
 
 		// создаем контроллер
 		$controller = new $controller_name;

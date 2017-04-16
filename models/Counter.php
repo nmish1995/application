@@ -18,6 +18,5 @@ class Counter
               AND `action` == '' 
               AND `count` == ''");
         $num=mysql_num_rows($query);
-        echo "TEST123";
     }
 }
