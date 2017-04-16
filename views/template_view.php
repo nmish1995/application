@@ -71,7 +71,7 @@
             <!-- Banner -->
             <section id="banner">
                 <div class="content">
-                    <?php include '//thecovergame.com/application/views/'.$content_view; ?>
+                    <?php include '/home/admin/web/thecovergame.com/public_html/application/views/'.$content_view; ?>
                 </div>
             </section>
             <!-- Section -->
