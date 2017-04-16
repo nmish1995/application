@@ -63,7 +63,11 @@ class Route
 			*/
 			Route::ErrorPage404();
 		}
-		
+
+		// записываем посещение
+        $counter = new Counter($controller_name, $action_name, $_SERVER['REMOTE_ADDR']);
+		$counter->saveVisit();
+
 		// создаем контроллер
 		$controller = new $controller_name;
 		$action = $action_name;
