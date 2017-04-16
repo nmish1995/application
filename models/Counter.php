@@ -10,7 +10,13 @@ class Counter
 
     function saveVisit()
     {
-        $query=mysql_query("SELECT * FROM `counter` WHERE `ip` == 0 AND `controller` == 0 AND `action` == 0 AND `count` == 0");
+        $query=mysql_query(
+            "SELECT * 
+            FROM `counter` 
+            WHERE `ip` == '' 
+              AND `controller` == '' 
+              AND `action` == '' 
+              AND `count` == ''");
         $num=mysql_num_rows($query);
         echo "TEST123";
     }
