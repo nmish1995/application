@@ -2,9 +2,15 @@
 
 class Family
 {
+    private $totalAge;
+
+    function __construct()
+    {
+        $this->totalAge = 35;
+    }
 
     function getTotalAge()
     {
-        return 25;
+        return $this->totalAge;
     }
 }
