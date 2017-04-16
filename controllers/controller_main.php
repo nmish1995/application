@@ -10,13 +10,17 @@ class Controller_Main extends Controller
 
 	function action_family()
     {
+        include "/home/admin/web/thecovergame.com/public_html/application/models/Family.php";
+
+        $family = new Family();
+
         $this->view->generate(
             'main_family.php',
             'template_view.php',
             array(
                 'boys' => 2,
                 'girls' => 2,
-                'totalAge' => 40
+                'totalAge' => $family->getTotalAge()
             ));
     }
 }
