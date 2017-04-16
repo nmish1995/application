@@ -19,7 +19,7 @@ class Controller_Main extends Controller
             'template_view.php',
             array(
                 'boys' => $family->getBoysCount(),
-                'girls' => 2,
+                'girls' => $family->getGirlsCount(),
                 'totalAge' => $family->getTotalAge()
             ));
     }

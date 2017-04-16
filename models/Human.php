@@ -28,3 +28,10 @@ class Human
             return false;
     }
 }
+function isGirl()
+{
+    if ($this->state == 'girl')
+        return true;
+    else
+        return false;
+}

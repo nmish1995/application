@@ -37,4 +37,15 @@ class Family
 
         return $boysCount;
     }
+
+    function getGirlsCount()
+    {
+        $girlsCount = 0;
+
+        foreach ($this->members as $member)
+            if ($member->isGirl() == true)
+                ++$girlsCount;
+
+        return $girlsCount;
+    }
 }
