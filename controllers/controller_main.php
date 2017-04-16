@@ -20,6 +20,8 @@ class Controller_Main extends Controller
             array(
                 'boys' => $family->getBoysCount(),
                 'girls' => $family->getGirlsCount(),
+                'parrots' => $family->getParrotsCount(),
+                'puppies' => $family->getPuppiesCount(),
                 'totalAge' => $family->getTotalAge()
             ));
     }

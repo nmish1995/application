@@ -8,11 +8,14 @@ class Human
 
     private $name;
 
-    function __construct($name, $state, $age)
+    private $function;
+
+    function __construct($name, $state, $age, $function)
     {
         $this->name = $name;
         $this->state = $state;
         $this->age = $age;
+        $this->function = $function;
     }
 
     function getAge()
@@ -27,6 +30,23 @@ class Human
         else
             return false;
     }
+
+    function isParrot()
+    {
+        if ($this->function == 'parrot')
+            return true;
+        else
+            return false;
+    }
+
+    function isPuppy()
+    {
+        if ($this->function == 'puppy')
+            return true;
+        else
+            return false;
+    }
+
 
     function isGirl()
     {
