@@ -10,10 +10,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css"><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 8]><script src="//thecovergame.com/assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="//thecovergame.com/assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="//thecovergame.com/assets/css/ie9.css"><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="//thecovergame.com/assets/css/ie8.css" /><![endif]-->
     <script type="text/javascript">
 
         function random(number) {
