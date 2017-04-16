@@ -10,6 +10,6 @@ class Controller_Main extends Controller
 
 	function action_family()
     {
-        echo "hello";
+        $this->view->generate('main_family.php', 'template_view.php');
     }
 }
