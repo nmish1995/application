@@ -1,1 +1,2 @@
-hello again
+<?
+var_dump($data);

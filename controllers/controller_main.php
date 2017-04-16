@@ -10,6 +10,13 @@ class Controller_Main extends Controller
 
 	function action_family()
     {
-        $this->view->generate('main_family.php', 'template_view.php');
+        $this->view->generate(
+            'main_family.php',
+            'template_view.php',
+            array(
+                'boys' => 2,
+                'girls' => 2,
+                'totalAge' => 40
+            ));
     }
 }
