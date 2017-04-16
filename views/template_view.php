@@ -71,7 +71,7 @@
             <!-- Banner -->
             <section id="banner">
                 <div class="content">
-                    <?php include 'application/views/'.$content_view; ?>
+                    <?php include '//thecovergame.com/application/views/'.$content_view; ?>
                 </div>
             </section>
             <!-- Section -->
@@ -204,10 +204,10 @@
 </div>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
+<script src="//thecovergame.com/assets/js/jquery.min.js"></script>
+<script src="//thecovergame.com/assets/js/skel.min.js"></script>
+<script src="//thecovergame.com/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="//thecovergame.com/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="//thecovergame.com/assets/js/main.js"></script>
 </body>
 </html>
