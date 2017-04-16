@@ -19,4 +19,12 @@ class Human
     {
         return $this->age;
     }
+
+    function isBoy()
+    {
+        if ($this->state == 'boy')
+            return true;
+        else
+            return false;
+    }
 }

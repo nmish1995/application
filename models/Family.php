@@ -26,4 +26,15 @@ class Family
 
         return $totalAge;
     }
+
+    function getBoysCount()
+    {
+        $boysCount = 0;
+
+        foreach ($this->members as $member)
+            if ($member->isBoy() == true)
+                ++$boysCount;
+
+        return $boysCount;
+    }
 }

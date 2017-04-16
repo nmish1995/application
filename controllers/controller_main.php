@@ -18,7 +18,7 @@ class Controller_Main extends Controller
             'main_family.php',
             'template_view.php',
             array(
-                'boys' => 2,
+                'boys' => $family->getBoysCount(),
                 'girls' => 2,
                 'totalAge' => $family->getTotalAge()
             ));
