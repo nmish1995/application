@@ -2,12 +2,12 @@
 include "start.php";
 $ip = $_SERVER['REMOTE_ADDR'];
 $mysql_ip=mysql_query("SELECT `ip` FROM `counter` WHERE `ip` == '{$ip}'");
-$count=mysql_query("SELECT `count` FROM `counter`");
-$row=mysql_fetch_row($count);
+$result=mysql_query("SELECT `count` FROM `counter`");
+$row=mysql_fetch_row($result);
 echo $row[1];
 echo $row[2];
 if($mysql_ip != null){
-    $count++;
+    $result++;
     $query=mysql_query("UPDATE `counter` SET `count`='{$count}' WHERE `ip` == '{$ip}'");
 }else{
     $first_count=1;
