@@ -6,7 +6,6 @@ $count=mysql_query("SELECT `count` FROM `counter`");
 $count=mysql_fetch_assoc($count);
 $count=count($count);
 var_dump($count);
-mysql_free_result($count);
 if($mysql_ip != null){
     $count++;
     $query=mysql_query("UPDATE `counter` SET `count`='{$count}' WHERE `ip` == '{$ip}'");
