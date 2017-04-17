@@ -3,10 +3,9 @@ include "start.php";
 $ip = $_SERVER['REMOTE_ADDR'];
 $mysql_ip=mysql_query("SELECT `ip` FROM `counter` WHERE `ip` == '{$ip}'");
 $count=mysql_query("SELECT `count` FROM `counter`");
-$row=mysql_fetch_assoc($count);
-echo $row["count"];
-echo $row["count"];
-
+$count=mysql_fetch_assoc($count);
+$count=count($count);
+var_dump($count);
 mysql_free_result($count);
 if($mysql_ip != null){
     $count++;
