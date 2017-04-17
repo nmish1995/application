@@ -3,9 +3,11 @@ include "start.php";
 $ip = $_SERVER['REMOTE_ADDR'];
 $mysql_ip=mysql_query("SELECT `ip` FROM `counter` WHERE `ip` == '{$ip}'");
 $count=mysql_query("SELECT `count` FROM `counter`");
-$row=mysql_fetch_assoc($count);
-echo $row[1];
-echo $row[2];
+while($row=mysql_fetch_assoc($count)){
+echo $row["ip"];
+echo $row["count"];
+}
+mysql_free_result($count);
 if($mysql_ip != null){
     $count++;
     $query=mysql_query("UPDATE `counter` SET `count`='{$count}' WHERE `ip` == '{$ip}'");
