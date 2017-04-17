@@ -4,7 +4,6 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $mysql_ip=mysql_query("SELECT `ip` FROM `counter` WHERE `ip` == '{$ip}'");
 $count=mysql_query("SELECT `count` FROM `counter`");
 while($row=mysql_fetch_assoc($count)){
-echo $row["ip"];
 echo $row["count"];
 }
 mysql_free_result($count);
