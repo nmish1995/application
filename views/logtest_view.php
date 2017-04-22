@@ -2,8 +2,6 @@
 
 require_once("start.php");
 
-session_start();
-
 if(isset($_POST["password"])){
 
     $password = $_POST["password"];
@@ -39,6 +37,8 @@ if(isset($send)) {
     $query = " SELECT * FROM `users` WHERE `login` = '{$login}' AND `password` = '{$password}'";
 
     $result = mysql_query($query) or die ("Error : " . mysql_error());
+
+    session_start();
 
     if(!$result){
 

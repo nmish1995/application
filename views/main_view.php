@@ -23,7 +23,7 @@
        </div>
 </div>-->
 <?
-if (!empty($_SESSION['login'])) {
+if (!empty($_SESSION['login']) and !empty($_SESSION['password'])) {
     echo "<h1><div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok-circle' aria-hidden='true'></span>Вы успешно вошли на сайт, как " . $_SESSION['name'] . " " . $_SESSION['lastname'] . "</div></h1><br>";
 }
 ?>
