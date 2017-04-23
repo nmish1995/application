@@ -4,8 +4,8 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $mysql_ip=mysql_query("SELECT `ip` FROM `counter` WHERE `ip` == '{$ip}'");
 $sum=mysql_query("SELECT SUM(`count`) as 'sum' FROM `counter`");
 $count=mysql_fetch_assoc($sum);
-var_dump($count);
-if($mysql_ip != null){
+echo $count['sum'];
+if($mysql_ip != false){
     $count++;
     $query=mysql_query("UPDATE `counter` SET `count`='{$count}' WHERE `ip` == '{$ip}'");
 }else{
@@ -22,5 +22,5 @@ echo "<div class='alert alert-warning' role='alert'>
 <div class='alert alert-warning' role='alert'>
 <span class='glyphicon glyphicon-console' aria-hidden='true'>
 </span>
-Всего посещений -- ".$count."
+Всего посещений -- ".$count['sum']."
 </div>";
