@@ -22,5 +22,5 @@ echo "<div class='alert alert-warning' role='alert'>
 <div class='alert alert-warning' role='alert'>
 <span class='glyphicon glyphicon-console' aria-hidden='true'>
 </span>
-Всего посещений -- ".$count."
+Всего посещений -- ".$count['count']."
 </div>";
