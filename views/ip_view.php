@@ -8,7 +8,7 @@ $count=mysql_fetch_assoc($sum);
 $count=$count['sum'];
 if($num_rows>0){
     $count++;
-    $query=mysql_query("UPDATE `counter` SET `count`={$count} WHERE `ip` == '{$ip}'");
+    $query=mysql_query("UPDATE `counter` SET `count`={$count} WHERE `ip` = '{$ip}'");
 }else{
     $first_count=1;
     $query=mysql_query("INSERT INTO counter (`ip`,`count`) VALUES ('{$ip}','{$first_count}')");
