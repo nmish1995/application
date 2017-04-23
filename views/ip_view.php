@@ -2,7 +2,7 @@
 include "start.php";
 $ip = $_SERVER['REMOTE_ADDR'];
 $mysql_ip=mysql_query("SELECT `ip` FROM `counter` WHERE `ip` == '{$ip}'");
-echo "SELECT `ip` FROM `counter` WHERE `ip` == '{$ip}'";
+echo "SELECT `ip` FROM `counter` WHERE `ip` = '{$ip}'";
 $num_rows=mysql_num_rows($mysql_ip);
 $sum=mysql_query("SELECT SUM(`count`) as 'sum' FROM `counter`");
 $count=mysql_fetch_assoc($sum);
