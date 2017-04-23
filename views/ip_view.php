@@ -5,11 +5,11 @@ $mysql_ip=mysql_query("SELECT `ip` FROM `counter` WHERE `ip` = '{$ip}'");
 $num_rows=mysql_num_rows($mysql_ip);
 $sum=mysql_query("SELECT SUM(`count`) as 'sum' FROM `counter`");
 $count=mysql_fetch_assoc($sum);
-echo mysql_fetch_assoc($sum);
 $count=$count['sum'];
 if($num_rows>0){
-    $count++;
-    $query=mysql_query("UPDATE `counter` SET `count`={$count} WHERE `ip` = '{$ip}'");
+    $my_count=mysql_query("SELECT `count` FROM `counter` WHERE `ip` = '{$ip}'");
+    $my_count++;
+    $query=mysql_query("UPDATE `counter` SET `count`={$my_count} WHERE `ip` = '{$ip}'");
 }else{
     $first_count=1;
     $query=mysql_query("INSERT INTO `counter` (`ip`,`count`) VALUES ('{$ip}','{$first_count}')");
